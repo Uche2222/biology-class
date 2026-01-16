@@ -1,0 +1,247 @@
+/* -----------------------------
+   GLOBAL STYLES
+------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+}
+
+body {
+  background: linear-gradient(to bottom right, #e0f7fa, #fffde7);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   HEADER
+------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #4dd0e1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav-btn {
+  background: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #ffe082;
+  transform: scale(1.05);
+}
+
+/* -----------------------------
+   HERO SECTION
+------------------------------*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #00796b;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.hero-image img {
+  width: 320px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* -----------------------------
+   BUTTONS
+------------------------------*/
+.primary-btn {
+  background: #ff7043;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #e64a19;
+  transition: all 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary-btn:active {
+  box-shadow: 0 2px 0 #e64a19;
+  transform: translateY(2px);
+}
+
+/* -----------------------------
+   MODULE SECTION
+------------------------------*/
+.modules {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.modules h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #388e3c;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.module-card {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-8px);
+}
+
+.module-card img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.module-card h3 {
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+.card-btn {
+  background: #81c784;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   GAMES SECTION
+------------------------------*/
+.games {
+  background: #fff3e0;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.game-card img {
+  width: 200px;
+  margin: 20px 0;
+}
+
+/* -----------------------------
+   QUIZ SECTION
+------------------------------*/
+.quiz {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.quiz-box {
+  background: #e1f5fe;
+  padding: 25px;
+  border-radius: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.quiz-buttons {
+  margin-top: 20px;
+}
+
+.quiz-btn {
+  background: #4fc3f7;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* -----------------------------
+   PROGRESS SECTION
+------------------------------*/
+.progress {
+  background: #f1f8e9;
+  padding: 40px;
+  text-align: center;
+}
+
+.stars {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/* -----------------------------
+   FOOTER
+------------------------------*/
+.footer {
+  background: #4dd0e1;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* -----------------------------
+   ANIMATIONS
+------------------------------*/
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* -----------------------------
+   RESPONSIVE
+------------------------------*/
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin-top: 30px;
+  }
+}
